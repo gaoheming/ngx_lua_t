@@ -1,6 +1,7 @@
 module("dbutil", package.seeall)
 local mysql_pool = require("mysql_pool")
 
+
 function query(sql)
 
     local ret, res, _ = mysql_pool:query(sql)
